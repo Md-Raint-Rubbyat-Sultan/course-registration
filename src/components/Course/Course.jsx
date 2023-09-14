@@ -17,7 +17,7 @@ const Course = ({ course, handelAddToCart }) => {
             </div>
             <div className='text-center w-full'>
                 <button
-                    onClick={()=> handelAddToCart(course)}
+                    onClick={()=> handelAddToCart(course, time, price)}
                     className='bg-blue-500 text-white font-semibold py-2 w-full rounded-lg '>Select</button>
             </div>
         </div>
