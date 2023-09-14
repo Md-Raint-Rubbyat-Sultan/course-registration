@@ -1,13 +1,15 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
-const CourseCart = () => {
+const CourseCart = ({ cart }) => {
     return (
         <div className='order-1 md:order-2 bg-white p-6 space-y-5 rounded-xl'>
             <h4 className='text-2xl font-bold'>Credit Hour Remaining  hr</h4>
             <hr />
             <h4 className='text-2xl font-bold'>Course Name</h4>
             <ol className='list-decimal px-6'>
-                <li>ok</li>
+                {
+                    cart.map((item, idx)=><li key={idx}>{item?.title}</li>)
+                }
             </ol>
             <hr />
             <p>Total Credit Hour : </p>
@@ -16,5 +18,9 @@ const CourseCart = () => {
         </div>
     );
 };
+
+CourseCart.propTypes = {
+    cart: PropTypes.array.isRequired,
+}
 
 export default CourseCart;

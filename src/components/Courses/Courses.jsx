@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
+import PropTypes from "prop-types";
 
-const Courses = () => {
+const Courses = ({ handelAddToCart }) => {
     const [courses, setCourses] = useState(() => []);
 
     const loadCourses = async () => {
@@ -24,10 +25,15 @@ const Courses = () => {
                 courses.map((course, idx) => <Course
                     key={idx}
                     course={course}
+                    handelAddToCart={handelAddToCart}
                 />)
             }
         </div>
     );
 };
+
+Courses.propTypes = {
+    handelAddToCart: PropTypes.func.isRequired,
+}
 
 export default Courses;

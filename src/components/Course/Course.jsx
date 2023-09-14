@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-const Course = ({ course }) => {
-    const { id, img, title, description, price, time } = course;
+const Course = ({ course, handelAddToCart }) => {
+    const { img, title, description, price, time } = course;
     return (
         <div className='bg-white p-4 rounded-xl flex flex-col  justify-between gap-6'>
             <img className='h-52 w-full rounded-lg' src={img} alt="" />
@@ -16,7 +16,9 @@ const Course = ({ course }) => {
                 <p>Credit: {time}hr</p>
             </div>
             <div className='text-center w-full'>
-                <button className='bg-blue-500 text-white font-semibold py-2 w-full rounded-lg '>Select</button>
+                <button
+                    onClick={()=> handelAddToCart(course)}
+                    className='bg-blue-500 text-white font-semibold py-2 w-full rounded-lg '>Select</button>
             </div>
         </div>
     );
@@ -24,6 +26,7 @@ const Course = ({ course }) => {
 
 Course.propTypes = {
     course: PropTypes.object.isRequired,
+    handelAddToCart: PropTypes.func.isRequired,
 }
 
 export default Course;
