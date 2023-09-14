@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "img": "",
-        "title": "https://i.ibb.co/Fh7ZfXh/desktop-smartphone-app-development-23-2148683810.jpg",
+        "img": "https://i.ibb.co/HqDSqtJ/web-design.png",
+        "title": "Web Development Fundamentals",
         "description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
         "price": 49.99,
         "time": 4

@@ -19,7 +19,7 @@ const Courses = () => {
     }, [])
 
     return (
-        <div className='md:col-span-2 lg:col-span-3'>
+        <div className='order-2 md:order-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {
                 courses.map((course, idx) => <Course
                     key={idx}
