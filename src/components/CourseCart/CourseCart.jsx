@@ -21,6 +21,8 @@ const CourseCart = ({ cart, creditTime, coursePriceTotal }) => {
 
 CourseCart.propTypes = {
     cart: PropTypes.array.isRequired,
+    creditTime: PropTypes.number.isRequired,
+    coursePriceTotal: PropTypes.number.isRequired,
 }
 
 export default CourseCart;
