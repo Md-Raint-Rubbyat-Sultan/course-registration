@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "",
+        "title": "https://i.ibb.co/Fh7ZfXh/desktop-smartphone-app-development-23-2148683810.jpg",
+        "description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
+        "price": 49.99,
+        "time": 4
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/HBryJk9/Rectangle-2.png",
+        "title": "Python Programming for Beginners",
+        "description": "Start your programming journey with Python. No prior experience required.",
+        "price": 59.99,
+        "time": 6
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/dDX3wTB/Logo-6.png",
+        "title": "Java Masterclass: From Novice to Ninja",
+        "description": "Master Java programming through hands-on projects and challenges.",
+        "price": 79.99,
+        "time": 8
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/rvPzz52/Rectangle-3-1.png",
+        "title": "Full-Stack Web Development Bootcamp",
+        "description": "Become a full-stack developer by learning both front-end and back-end technologies.",
+        "price": 149.99,
+        "time": 10
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/HCV6ZJd/Rectangle-2-3.png",
+        "title": "Machine Learning Essentials",
+        "description": "Get started with machine learning and build predictive models using Python.",
+        "price": 69.99,
+        "time": 5
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/TgZ7S5y/Rectangle-3.png",
+        "title": "Data Science for Beginners",
+        "description": "An introduction to data analysis and visualization with Python and pandas.",
+        "price": 54.99,
+        "time": 7
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/K25jjBq/Rectangle-2-1.png",
+        "title": "Mobile App Development with React Native",
+        "description": "Build cross-platform mobile apps using React Native and JavaScript.",
+        "price": 64.99,
+        "time": 9
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/XLc7wHt/Rectangle-2-5.png",
+        "title": "Cybersecurity Fundamentals",
+        "description": "Learn the basics of cybersecurity, including threat analysis and prevention.",
+        "price": 49.99,
+        "time": 3
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/2sxTfmh/Rectangle-2-6.png",
+        "title": "Blockchain and Cryptocurrency Explained",
+        "description": "Understand the world of blockchain technology and digital currencies.",
+        "price": 59.99,
+        "time": 4
+    }
+]
