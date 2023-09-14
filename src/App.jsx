@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import CourseCart from './components/CourseCart/CourseCart'
 import Courses from './components/Courses/Courses'
@@ -7,10 +7,27 @@ import Toast from './components/Toast/Toast'
 
 const App = () => {
   const [cart, setCart] = useState(() => []);
+  const [isActive, SetIsActive] = useState(() => true);
+
+  const toastInterval = () => {
+    SetIsActive(() => true);
+  }
+
+  useEffect(() => {
+    if (isActive) return;
+    const interval = setTimeout(toastInterval, 5000);
+    return () => clearTimeout(interval);
+  }, [isActive])
 
   const handelAddToCart = course => {
     setCart((cart) => {
+      const isExist = cart.find(item => item?.id === course?.id)
       const remainingCourse = cart.filter(item => item?.id !== course?.id);
+
+      if (isExist) {
+        SetIsActive(() => false)
+      }
+
       return [...remainingCourse, course]
     });
   }
@@ -21,7 +38,7 @@ const App = () => {
         <Courses handelAddToCart={handelAddToCart} />
         <CourseCart cart={cart} />
       </main>
-      <Toast />
+      <Toast isActive={isActive} />
     </div>
   )
 }

@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-const Toast = () => {
-    const [isActive, SetIsActive] = useState(() => true);
-
-    const toastInterval = () => {
-        SetIsActive((prev) => !prev);
-    }
-
-    useEffect(() => {
-        const interval = setTimeout(toastInterval, 7000);
-        return () => clearTimeout(interval);
-    }, [])
-
+const Toast = ({ isActive }) => {
     return (
-        <div className={`text-xl bg-white px-4 py-2 border-2 absolute right-3 bottom-3 ${isActive ? "block" : "hidden"}`}>
+        <div className={`text-xl text-green-700 font-bold bg-white px-4 py-2 w-1/2 ms-auto border-2 rounded-xl sticky right-3 bottom-3  ${isActive ? "hidden" : "block"}`}>
             <h3>Toast</h3>
         </div>
     );
 };
+
+Toast.propTypes = {
+    isActive: PropTypes.bool.isRequired,
+}
 
 export default Toast;
