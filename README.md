@@ -7,7 +7,9 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# State management into my assignment
+- To be honest about this project most of the time we have to use prop drilling method to handel the states.
+- Specially if you look at Course component you can see the props are coming from App.jsx file.
+- But most difficult part about prop is to handel cart and toast component. Each of them is taking 3 & 2 props respectively. It was tough to manage the state with that.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Site link](http://acoustic-increase.surge.sh/)
