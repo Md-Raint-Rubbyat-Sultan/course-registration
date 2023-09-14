@@ -5,7 +5,7 @@ const Course = ({ course, handelAddToCart }) => {
     const { img, title, description, price, time } = course;
     return (
         <div className='bg-white p-4 rounded-xl flex flex-col  justify-between gap-6'>
-            <img className='h-52 w-full rounded-lg' src={img} alt="" />
+            <img className='h-52 w-full rounded-lg' src={img} alt={title} />
             <h4 className='text-2xl font-semibold'>{title}</h4>
             <p>{description}</p>
             <div className='font-medium flex items-center justify-between gap-1'>
@@ -17,7 +17,7 @@ const Course = ({ course, handelAddToCart }) => {
             </div>
             <div className='text-center w-full'>
                 <button
-                    onClick={()=> handelAddToCart(course, time, price)}
+                    onClick={() => handelAddToCart(course, time, price)}
                     className='bg-blue-500 text-white font-semibold py-2 w-full rounded-lg '>Select</button>
             </div>
         </div>
