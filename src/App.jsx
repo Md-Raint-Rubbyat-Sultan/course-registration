@@ -49,7 +49,7 @@ const App = () => {
       // calculation new time
       const newTime = prev + time;
 
-      if (newTime < 20) {
+      if (newTime <= 20) {
         // if the credit is less than 20 and the course do not exist into the cart
         if (!isExist) {
           // setting course to cart
@@ -62,8 +62,9 @@ const App = () => {
           setCoursePriceTotal((prev) => prev + price);
           // setting total credits
           return newTime;
-        } else {// if the credit is not more than 20 but the course is already exist into the cart
-          warning(`${course?.title} course is already added to cart!`, false);
+        } else {
+          // if the credit is not more than 20 but the course is already exist into the cart
+          warning(`${course?.title} is already added to cart!`, false);
           // setting previous credit
           return prev;
         }
@@ -72,8 +73,9 @@ const App = () => {
         if (!isExist) {
           warning("Credit limit over", false);
           return prev;
-        } else { // if the credit is more then 20 and the course is already exist into the cart
-          warning(`${course?.title} course is already added to cart!`, false);
+        } else {
+          // if the credit is more then 20 and the course is already exist into the cart
+          warning(`${course?.title} is already added to cart!`, false);
           return prev;
         }
       }

@@ -5,8 +5,6 @@
 2. We use complex grid layout instead of flex while making course cards and cart section.
 3. The code of cart is deigned complicatedly and also comment make it readable and understandable.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
 # State management into my assignment
 - To be honest about this project most of the time we have to use prop drilling method to handel the states.
 - Specially if you look at Course component you can see the props are coming from App.jsx file.
